@@ -1,0 +1,928 @@
+/*
+ * Style sheet for Membeirum page templates plugin
+ *
+ * @package     Memberium Page Templates Add On
+ * @author      Memberium
+ * @link        https://memberium.com
+ */
+
+
+
+
+* {
+  margin: 0;
+}
+
+
+
+
+
+/* global classes */
+
+.aligncenter, input .aligncenter {
+	text-align: center;
+	margin-left: auto !important;
+	margin-right: auto !important;
+}
+
+
+.left {
+	text-align: left;
+}
+
+.right {
+	text-align: right;
+}
+
+.nopadding {
+   padding: 0 !important;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+
+/* Memberium Shortcode CSS */ 
+
+/* Your account related Registration form / login / shortcodes with input field */ 
+
+.memberium-form input, .memberium-form input[type=password], .memberium-form input[type=text], .memberium-form input #memb_password_change-2-password1, .memberium-form input #memb_password_change-2-password2 {
+	display: block;
+	box-sizing: border-box; 
+	clear: both;
+	width: 100%;
+	margin-top: 2px;
+	margin-bottom: 8px;
+	box-shadow: inset 0 2px 4px 0 hsla (0, 0%, 0%, 0.08);
+}
+
+.memberium-form select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: .5em;
+    border: none;
+}
+
+
+.memberium-form select::-ms-expand {
+    display: none;
+}
+
+
+.memberium-form input[type="submit"], .memberium-form input[type="button"] {
+	margin-top: 15px;
+}
+
+
+.select-container {position:relative; display: inline;}
+.select-container:after {content:""; width:0; height:0; position:absolute; pointer-events: none;}
+.select-container:after {
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    top: .3em;
+    right: .75em;
+    border-top: 8px solid black;
+    opacity: 0.5;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+
+
+
+
+.memberium-gvtr img  {
+	width:182px;
+	height: 182px;
+	border-radius: 182px;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.11), 0 1px 2px rgba(0,0,0,0.22);
+    transition: all 0.3s cubic-bezier(.24,.7,.24,1);
+}
+
+.memberium-form label {
+	margin-top: 5px;
+}
+
+ .memberium-form input[type=checkbox] {
+	float: left;
+	padding-right: 5px;
+	display: inline-block;
+	margin: 5px 10px 0 0;
+	-webkit-appearance:none;
+    width:20px;
+    height:20px;
+    border-radius:4px;
+    border:1px solid #ccc;
+}
+
+
+
+.entry-content p.login-username, .entry-content p.login-password {
+	margin-bottom: 0.5em;
+}
+
+#memb_addupdate_creditcard-1 {
+	max-width: 600px;
+}
+
+
+/* form related css */ 
+
+
+input,
+button,
+select,
+optgroup,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+input[type="date"],
+input[type="time"],
+input[type="datetime-local"],
+input[type="month"] {
+  -webkit-appearance: listbox;
+}
+
+
+.memberium-form::placeholder {
+  color: #606a72;
+  opacity: 1;
+}
+
+
+
+.memberium-form input[type=text], .memberium-form input[type=password], .memberium-form input[type=email], .memberium-form input[type=tel], .memberium-form select  {
+  display: block;
+  padding: 6px 8px;
+  font-size: 1.1rem;
+  line-height: 1.45;
+  border: 1px solid #cecece;
+  border-radius: 3px;
+  transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  box-shadow:inset 0 2px 4px 0 hsla (0, 0%, 0%, 0.08);
+}
+
+.memberium-form select {
+	display: inline-block;
+    padding: 6px 10px 6px 8px;
+	 -webkit-appearance: menulist;
+  -moz-appearance: menulist;
+  appearance: menulist;
+}
+
+  
+
+
+
+
+
+
+.memberium-form input[type=text]:focus, .memberium-form input[type=password]:focus, .memberium-form input[type=email]:focus, .memberium-form input[type=tel]:focus, .memberium-form select:focus  {
+  color: #495057;
+  background-color: #fff;
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.memberium-form::-webkit-input-placeholder {
+  color: #606a72;
+  opacity: 1;
+}
+
+.memberium-form::-moz-placeholder {
+  color: #606a72;
+  opacity: 1;
+}
+
+.memberium-form:-ms-input-placeholder {
+  color: #606a72;
+  opacity: 1;
+}
+
+.memberium-form::-ms-input-placeholder {
+  color: #606a72;
+  opacity: 1;
+}
+
+.memberium-form::placeholder {
+  color: #606a72;
+  opacity: 1;
+}
+
+
+
+.memberium-form select:not([size]):not([multiple]) {
+  height: calc(2.25rem + 2px);
+}
+
+.memberium-form select:focus {
+  color: #3e4449;
+  background-color: #fff;
+}
+
+/* /end form related css */ 
+
+
+/* table related css - invoices, manage subscription, receipt  */ 
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+
+th, td {
+  padding: 8px 10px;  
+  text-align: left;
+  border: 1px solid #eee;
+  vertical-align:middle;
+}
+
+
+/* m4is add CC */ 
+
+#memb_addupdate_creditcard-1 label, #memb_addupdate_creditcard-2 label {
+	margin-right: 5px;
+}
+
+#memb_addupdate_creditcard-1 div, #memb_addupdate_creditcard-2 div {
+	margin-bottom: 5px;
+}
+
+#memb_addupdate_creditcard-1 select[name=expirationmonth], #memb_addupdate_creditcard-1 select[name=expirationyear]  {
+
+}
+
+#memb_addupdate_creditcard-1 div:nth-child(3), #memb_addupdate_creditcard-1 div:nth-child(4) {
+		width: 30%;
+	float: left;
+	display: inline;
+}
+
+
+
+
+
+/* Memberium Invoice list and Memb show receipt shortcodes */ 
+
+
+.memberium-invoice-logo { max-width:400px; }
+
+/* Form Style */
+
+	.itemlabel { color: #fff; background-color:#000; border-radius: 5px; }
+	.itemlabel td { padding-left: 5px; }
+
+	.memberium-order-receipt table, .memberium-order-receipt tr, .memberium-order-receipt td { border: none; }
+
+	.memberium-order-receipt .logo { height: 125px; margin-right: -5px; margin-top: -5px; border-radius: 7px; }
+
+	.memberium-order-receipt .addresstable { border-collapse:separate;  border-spacing:10px; }
+	.billingaddress, .shippingaddress { 
+		background-color:lightblue; 
+		border-radius:10px; 
+		padding:10px !important; 	
+	 }
+	 /* Ribbon Style */
+
+	.memberium-order-receipt { position: relative; margin: 0; padding: 10px; overflow: hidden; border: 1px solid #000000; }
+
+	/* The ribbons */
+
+	.corner-ribbon { width: 200px; background: #e43; position: absolute; top: 25px; left: -50px; text-align: center; line-height: 50px; letter-spacing: 1px; color: #f0f0f0; transform: rotate(-45deg); -webkit-transform: rotate(-45deg); font-weight:bold; font-size: 130%; }
+
+	/* Custom styles */
+
+	.corner-ribbon.shadow { box-shadow: 0 0 3px rgba(0,0,0,.3); }
+
+	/* Different positions */
+
+	.corner-ribbon.top-left { top: 25px; left: -50px; transform: rotate(-45deg); -webkit-transform: rotate(-45deg); }
+	.corner-ribbon.top-right { top: 25px; right: -50px; left: auto; transform: rotate(45deg); -webkit-transform: rotate(45deg); }
+	.corner-ribbon.bottom-left { top: auto; bottom: 25px; left: -50px; transform: rotate(45deg); -webkit-transform: rotate(45deg); }
+	.corner-ribbon.bottom-right { top: auto; right: -50px; bottom: 25px; left: auto; transform: rotate(-45deg); -webkit-transform: rotate(-45deg); }
+
+	/* Colors */
+
+	.corner-ribbon.white { background: #f0f0f0; color: #555; }
+	.corner-ribbon.black { background: #333; }
+	.corner-ribbon.grey { background: #999; }
+	.corner-ribbon.blue { background: #39d; }
+	.corner-ribbon.green { background: #2c7; }
+	.corner-ribbon.turquoise { background: #1b9; }
+	.corner-ribbon.purple { background: #95b; }
+	.corner-ribbon.red { background: #e43; }
+	.corner-ribbon.orange { background: #e82; }
+	.corner-ribbon.yellow { background: #ec0; }
+
+
+
+/* /END Your account related */ 
+
+
+
+/* Raw version of Memberium installer pages css */ 
+
+
+.page-template-template-page-builder-no-sidebar-php .page .flex-cnt {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+.memberium-c-box, .memberium-c-box-100 {
+max-width: 65%;
+height: auto;
+padding: 4% 4% 4% 4%;
+margin: 8% auto 15% auto;
+background-color: #ffffff;
+box-shadow: 0px 0px 5px 1px rgba(140,140,140,0.3);
+transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+border-radius: 4px 4px 4px 4px;
+color:#3a3a3a;
+}
+
+.memberium-c-box-100 {
+	max-width:100%;
+	padding: 20px 50px;
+	margin: 0 auto 0 auto;
+}
+
+
+.memberium-c-box-100 h4 {
+	margin-bottom: 20px;
+	font-weight: 500;
+}
+
+.memb-center { 
+text-align: center;
+margin-left: auto;
+margin-right: auto;
+}
+ 
+
+.memberium-c-box h1 {
+margin-bottom: 20px;
+}
+
+#memberium-shortcode-blocks {
+	display: block;
+	overflow: visible;
+  	justify-content: center;
+	margin: 40px auto;	
+	max-width: 90%;
+}
+
+
+
+
+/* default button for excerpt pages + login and shortcode form fields */ 
+
+.memb-default-cta-btn, .memberium-form input[type=submit], .memberium-form button  {
+	padding:15px 40px;
+	margin: 10px 0;
+	background-color: #1569ae;
+	display: inline-block;
+	color: #fff;
+	text-align: center;
+	white-space:normal;
+	line-height: 1.3;
+	font-size: 18px;
+	border-radius: 2px;
+	border: 0;
+    -webkit-appearance: none;
+    -moz-appearance:    none;
+    appearance:         none;
+}
+
+input #memb_placeorder_button_1 {
+	width: 100%;
+}
+
+
+.memberium-c-box .memberium-form .col-sm-4 label {
+	text-align: right;
+}
+
+
+.memberium-subscription-list input[type=submit],  .memb-red {
+background-color:#c14a41;
+}
+
+
+a.memb-default-cta-btn, a:visited .memb-default-cta-btn, a:active .memb-default-cta-btn {
+color: #fff;
+}
+
+
+.memb-default-cta-btn:hover, .memberium-form input[type=submit]:hover, .memberium-form button:hover, .memberium-subscription-list input[type=submit]:hover {
+	-webkit-filter: brightness(120%);
+    filter: brightness(120%);
+	opacity: 0.8;
+	color: #fff;
+    -webkit-transition: 1s -webkit-filter linear;
+    -moz-transition: 1s -moz-filter linear;
+  	transition: 1s filter linear, 1s -webkit-filter linear;
+}
+
+/*  ///// END - Raw version of Memberium installer pages css */ 
+
+
+/* START Memberium Custom Shortcode */ 
+
+.mem_ind-course-wrap .col-sm-4 {
+	padding-left: 0;
+	padding-right: 0;
+	
+}
+
+.memberium-ind-course {
+	border-radius: 4;
+}
+
+.mem_ind-course-wrap {
+    background-color: #ffffff;
+    box-shadow: 0px 0px 4px 1px rgba(140,140,140,0.3);
+    margin: 10px 10px 10px 10px;
+	border-radius: 4px 4px 0 0;
+}
+	
+
+.memberium-ind-course .img-fluid {
+	border-radius: 4px 4px 0 0;
+}
+
+.memberium-ind-course h4, .memberium-ind-course-horizontal h4 {
+	margin-bottom: 20px;
+	font-weight: 500;
+}
+
+
+.memberium-ind-course .memberium-ind-course-caption {
+	padding:25px 20px 20px 20px;
+	line-height: 1.4;
+}
+
+.memberium-ind-course .locked img {
+    -webkit-filter: grayscale(60%); 
+    filter: grayscale(60%);
+	z-index: 1
+}
+
+
+.memb-locked-verticalspace {
+	height: 30px;
+}
+
+
+.memb-course-locked-overlay, .memb-course-locked-overlay svg .icon, .memb-course-complete-overlay, .memb-course-locked-overlay svg .icon, .memb-course-complete-overlay svg .icon, .memberium-ind-course-horizontal .memb-course-complete-overlay-h svg .icon, .memberium-ind-course-horizontal .memb-course-locked-overlay-h svg .icon   {
+	height: 60px;
+	width: 60px;
+	border-radius: 60px;
+	background-color: #575757;
+	color: #fff;
+	font-size: 32px;
+	box-shadow: 0px 0px 2px 1px rgba(140,140,140,0.3);
+	text-align: center;
+	vertical-align: middle;
+	z-index: 2;
+}
+
+
+.memb-course-locked-overlay svg, .memb-course-complete-overlay svg, .memberium-ind-course-horizontal .memb-course-complete-overlay-h svg, .memberium-ind-course-horizontal .memb-course-complete-overlay-h svg, .memberium-ind-course-horizontal .memb-course-locked-overlay-h svg   { 
+    fill: white;
+	height: 40px;
+	width: 40px;
+	position: absolute;
+	left: 17%;
+	top:15%;
+	text-align: center;
+	margin: 0 auto;
+   
+}
+
+
+
+
+
+
+.memberium-ind-course .memb-course-complete img {
+    -webkit-filter: grayscale(0%); 
+    filter: grayscale(0%);
+	z-index: 1
+}
+
+.memb-course-row {
+	margin-top: -60px;
+}
+
+
+.locked .memb-course-locked-overlay, .memb-course-complete .memb-course-complete-overlay, .locked .memb-course-locked-overlay-h {
+top: 0px;
+margin-top:-31px;
+margin-bottom: -25px;
+left: 75%;
+position: relative;
+}
+
+
+
+dd.course_progress div.course_progress_blue {
+	background-color: #5CB85C;
+}
+
+
+/* lifterlms related */ 
+
+.memberium-ind-course p.llms-course-complete-text {display:none;}
+
+body .memberium-ind-course .llms-course-progress .llms-progress .llms-progress-bar {
+	border-radius: 11px;
+}
+
+
+body .memberium-ind-course .llms-progress .llms-progress-bar {
+	background-color: transparent;
+}
+
+/* Course grid - horizontal version */
+
+.memberium-ind-course-horizontal {
+	margin-bottom: 0px;
+	border-radius: 4px;
+	 background-color: #ffffff;
+    box-shadow: 0px 0px 4px 1px rgba(140,140,140,0.3);
+    margin: 10px 10px 10px 10px;
+	border-radius: 4px;
+}
+
+
+
+
+.memb-course-locked-overlay-h, .memb-course-complete-overlay-h  {
+	height: 60px;
+	width: 60px;
+	border-radius: 50px;
+	background-color: #575757;
+	color: #fff;
+	font-size: 32px;
+	box-shadow: 0px 0px 2px 1px rgba(140,140,140,0.3);
+	text-align: center;
+	 display: flex;
+  	align-items: center;
+  	justify-content: center;
+	z-index: 2;
+    padding: 0;
+
+}
+
+
+.memb-course-complete-overlay, .memb-course-complete-overlay-h  {
+background-color: #629e5e;
+}
+
+
+.memberium-ind-course-horizontal .locked .memb-course-locked-overlay-h, .memberium-ind-course-horizontal .memb-course-complete .memb-course-complete-overlay-h {
+top: -50px;
+margin-top:-21px;
+margin-bottom: -39px;
+left: 78%;
+position: relative;
+}
+
+ .memberium-ind-course-horizontal .img-fluid {
+	border-radius: 4px 0 0 4px;
+}
+
+
+
+
+.memberium-ind-course-horizontal .col-sm-4 img {
+	object-fit: cover;	
+	width: 100%;
+	height: 100%;
+	margin-bottom: 0px;
+	vertical-align: middle;
+}
+
+
+
+
+
+
+/* /END Memberium Custom Shortcodes */ 
+
+
+/* memberium-individual-course-directory-menu */ 
+
+
+.course-grid-1-1 {
+	margin-left: 9%;
+	margin-right: 9%;
+}
+
+.course-grid-1-1:last-child {
+margin-bottom: 60px;
+}
+
+
+#memberium-top-ind-course-header {
+	box-shadow: 0 1px 3px rgba(0,0,0,0.11), 0 1px 2px rgba(0,0,0,0.22);
+
+	margin-bottom: 20px;
+}
+
+#memberium-individual-course-directory-menu h5 {
+font-size: 120%;
+font-weight: 700;
+letter-spacing: -0.5px;
+opacity: 0.8;
+}
+
+
+#memberium-individual-course-directory-menu ul.menu {
+	 list-style: none; 
+	 margin: 0.1em 0;
+     padding: 0 1em;
+
+}
+
+#memberium-individual-course-directory-menu ul.menu li:before {
+	content: "";
+    border-color: transparent #808080;
+    border-style: solid;
+    border-width: 0.45em 0 0.45em 0.55em;
+    display: block;
+    height: 0;
+    width: 0;
+    left: -1.1em;
+    top: 1.4em;
+    position: relative;	
+	
+}
+
+#memberium-individual-course-directory-menu ul.menu li {
+padding: 0em 1em 0.8em 1em;
+font-size: 130%;
+border-bottom: 1px solid #d4d4d4;
+font-weight: 400;
+letter-spacing: -0.25px;
+
+}
+
+
+
+
+
+.memberium-about-teacher-box {
+	margin-top:20px;
+	background-color: #f8f8f8;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.11), 0 1px 2px rgba(0,0,0,0.22);
+	padding: 20px;
+}
+
+.memberium-about-teacher-box img.memberium-teacher {
+	width: 125px;
+	height: 125px;
+	opacity: 1; border-radius: 100px 100px 100px 100px;
+	text-align: center; margin: -40px -40px 10px 5px;
+	border: 3px solid #f8f8f8;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.11), 0 1px 2px rgba(0,0,0,0.22);
+
+
+}
+
+.memberium-ind-account-area .elementor-icon {
+	font-size: 30px;
+}
+
+
+.memberium_menu_list ul {
+	font-size: 21px;
+}
+
+.memberium_menu_list ul li {
+		list-style: none;
+}
+
+
+/* course dashboard */ 
+
+.memberium-cd-start-course .elementor-button-wrapper .elementor-button {
+	display: block;
+	width: 100%;
+}
+
+
+
+
+
+/* lesson */ 
+
+
+/* learndash related */ 
+
+.memberium-ind-course dd.course_progress {
+	width: 100%;
+}
+
+
+
+/* learndash complete previous lessons first warning */ 
+
+
+.mc_warning-alert, #learndash_complete_prerequisites, #learndash_complete_prev_lesson {
+    background: rgba(44, 150, 221, 0.7) none repeat scroll 0 0;
+    border-radius: 4px;
+    padding: 20px;
+	width: 100%;
+}
+
+#learndash_complete_prerequisites, #learndash_complete_prev_lesson {
+	font-size: 22px;
+	line-height: 1.4;
+	font-weight: 700;
+	color: white;
+	margin:30px auto 30px auto;
+    display: block;
+}
+
+.mc_blue-alert {
+    background: rgba(44, 150, 221, 0.7) none repeat scroll 0 0;
+    border-radius: 4px;
+    padding: 20px;
+	width: 100%;
+}
+
+
+.mc_red-alert {
+    background: rgba(231, 76, 60, 0.7) none repeat scroll 0 0;
+    border-radius: 4px;
+    padding: 20px;
+	width: 100%;
+}
+
+
+.mc_default-alert {
+    background: rgba(236, 241, 240, 0.6) none repeat scroll 0 0;
+    border-radius: 4px;
+    padding: 20px;
+	width: 100%;
+}
+
+
+.memberium-form #ld_course_info #ld_course_info_mycourses_list {
+    display: none;    
+}
+
+.memberium-form #ld_course_info #course_progress_details span.learndash-profile-course-title, .memberium-form #ld_course_info #course_progress_details span.learndash-profile-course-access-label  {
+   display: block;
+}
+
+
+.memberium-form #ld_course_info #course_progress_details span.learndash-profile-course-title {
+   font-size: 110%; 
+}
+
+
+.memberium-form #ld_course_info #course_progress_details span.leardash-course-status-not-started {
+    color:#c14a41;
+}
+
+
+.memberium-form #ld_course_info #course_progress_details span.leardash-course-status-in-progress {
+    color: #126fa0;
+}
+
+
+.memberium-form #ld_course_info #course_progress_details  span.learndash-profile-course-access-label {
+ opacity: 0.6;   
+}
+
+
+/* END --- Extra classes for demo.memberium.com */
+
+
+
+/*  classes for horizontal coursegrid and raw course grid shortcodes */ 
+.mem_raw_course:last-child {
+	margin-bottom: 60px;
+}
+
+
+	
+
+.col {
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  max-width: 100%;
+}
+
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.col-sm-2, .col-sm-4,.col-sm-6, .col-sm-8, .col-sm-12 {
+float:left;
+	min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+
+/* mobile */ 
+
+@media only screen and (max-width: 850px) {
+   
+	
+	.elementor-button .elementor-button-text {
+		line-height: 1.4;
+	}
+	
+	
+	#membrm-prev-lesson #membrm-next-lesson {
+		display: block;
+		width: 100%;
+	}
+	
+	
+	
+	/* horizontal shortcode mobile css */ 
+	.col-sm-2, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-8, .col-sm-12 {
+		max-width: 100%;
+		flex: 100%;
+
+	}
+	
+	
+		.memberium-ind-course-horizontal .locked .memb-course-locked-overlay-h, .memberium-ind-course-horizontal .memb-course-complete .memb-course-complete-overlay-h {
+	top: 0px;
+	margin-top:-30px;
+	margin-bottom: -30px;
+	left: 78%;
+	position: relative;
+	}
+
+	 .memberium-ind-course-horizontal .img-fluid {
+		border-radius: 4px 4px 0px 0px;
+	}
+	
+	
+	.membrm-prev-lesson .elementor-button.elementor-size-sm, .membrm-prev-lesson .elementor-size-sm, .membrm-next-lesson .elementor-button.elementor-size-sm {
+		width:100%;
+	}
+
+	/* login page */ 
+
+#memberium-login-wrapper {
+	margin-left: -10%;
+	margin-right: -10%;
+	width: 100%;
+}
+	
+	
+	/* raw version of installer pages Mobile / tablet */ 
+	
+	.memberium-c-box { 
+	max-width:95%;
+	}
+	
+	
+	
+	/* END raw version of installer pages Mobile / tablet */ 
+
+	
+}

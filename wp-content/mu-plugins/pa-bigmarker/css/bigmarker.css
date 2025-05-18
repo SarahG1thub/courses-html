@@ -1,0 +1,90 @@
+.pa_bigmarker_error {
+  display: none;
+}
+
+.pa_bigmarker_button a {
+  cursor: pointer;
+}
+
+.pa_bigmarker_button[aria-disabled="true"] a.elementor-button[role='button']{
+  background-color: #c0c0c0 !important;
+  color: #707070 !important;
+  user-select:none !important;
+  box-shadow: 0px 8px 16px rgb(112 112 112 / 24%) !important;
+  cursor: not-allowed !important;
+}
+
+.pa_bigmarker_button[aria-disabled="true"]:active {
+  pointer-events: none !important;
+}
+
+.pa_bigmarker_next_countdown {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pa_bigmarker_next_countdown_wrapper {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pa_bigmarker_next_countdown_wrapper .pa_bigmarker_next_countdown_digit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 45px;
+  width: 90px;
+  height: 90px;
+  border-radius: 100%;
+  background-color: #1890ff;
+  color: white;
+}
+
+.pa_bigmarker_next_countdown_wrapper .pa_bigmarker_next_countdown_text {
+  font-size: 17px;
+}
+
+
+.pa_bigmarker_card_link[aria-disabled="true"]:active {
+  pointer-events: none !important;
+}
+
+.pa_bigmarker_card_link[aria-disabled='true'] .elementor-widget-wrap,
+.pa_bigmarker_card_link[aria-disabled='true'] .elementor-widget-wrap:hover,
+.pa_bigmarker_card_link[aria-disabled='true'] .elementor-widget-wrap:active{
+  background-color: #c0c0c0 !important;
+  color: #707070 !important;
+  box-shadow: 0px 8px 16px rgb(112 112 112 / 24%) !important;
+  cursor: not-allowed !important;
+}
+
+.pa_bigmarker_card_link .elementor-button[role='button'] {
+  user-select: none;
+  background-color:transparent !important;
+}
+
+.pa_bigmarker_card_link .elementor-widget-wrap{
+  user-select: none;
+  border-radius: 16px;
+  transition: .4s;
+  transition-property: all;
+  transition-duration: 0.4s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+}
+
+.pa_bigmarker_card_link .elementor-widget-wrap:hover{
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+.pa_bigmarker_card_link .elementor-widget-wrap:active{
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.16);
+}
+
+.pa_bigmarker_registered_hide {
+  display: none;
+}

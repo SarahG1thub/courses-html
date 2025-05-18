@@ -1,0 +1,76 @@
+/*
+Theme Name:     Invent Child
+Theme URI:      https://www.livemeshthemes.com/invent
+Description:    Child theme for the Invent Theme by LiveMesh
+Author:         LiveMesh
+Author URI:     http://themeforest.net/user/livemesh
+Template:       invent
+Version:        0.1.0
+*/
+
+
+/**
+Menu fixes added 2021-08-02
+ */
+#primary-menu {
+  float: none !important;
+  margin-right: 0 !important;
+  width: calc(100% - 80px);
+}
+
+.drop-menu-wrap ul li {
+  float: none;
+}
+
+#primary-menu > ul.menu > li > a {
+  padding: 0 18px 0;
+}
+
+#menu-dashboard-new-1 > li.menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-14654 {
+  /*padding-left: 18px !important;*/
+  margin-left: 12px !important;
+}
+
+#header>.inner>.wrap {
+  max-height: 61px !important;
+}
+
+.astm-search-menu {
+  position: relative !important;
+  float: right !important;
+  right: 0;
+  top: 0;
+}
+
+.elementor-element-9d7fe31, .elementor-element-7a7e3ed9 {
+  margin-bottom: 0 !important;
+}
+
+.elementor-element-74598002 {
+  margin-top: -32px;
+}
+
+#content {
+	min-height: calc(100vh - 230px);
+}
+
+.astm-search-menu {
+  /*margin-top: 11px !important;*/
+}
+
+.is-menu.full-width-menu form, .is-menu.sliding form {
+  top: 14px !important;
+}
+
+.search-form {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.astm-search-menu path {
+  fill: #dddddd;
+}
+
+.search-text {
+  font-family: "Lato", Arial, Helvetica, Verdana, sans-serif;
+}
